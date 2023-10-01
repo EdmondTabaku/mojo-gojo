@@ -12,7 +12,7 @@ Welcome to Mojo GoJo, where Go meets Emojis to make your coding experience delig
 
 ```bash
 # Download the binary
-wget https://github.com/EdmondTabaku/mojo-gojo/releases/download/v1.0.0/mojo-gojo-linux -O mojo-gojo
+wget https://github.com/YoungYeti/mojo-gojo/releases/download/v1.0.0/mojo-gojo-linux -O mojo-gojo
 
 # Make the binary executable
 chmod +x mojo-gojo
@@ -26,7 +26,7 @@ sudo mv mojo-gojo /usr/local/bin/
 
 ```bash
 # Download the binary
-curl -Lo mojo-gojo https://github.com/EdmondTabaku/mojo-gojo/releases/download/v1.0.0/mojo-gojo-mac
+curl -Lo mojo-gojo https://github.com/YoungYeti/mojo-gojo/releases/download/v1.0.0/mojo-gojo-mac
 
 # Make the binary executable
 chmod +x mojo-gojo
@@ -36,7 +36,7 @@ sudo mv mojo-gojo /usr/local/bin/
 ```
 
 #### Windows:
-Download the .exe file from [mojo-gojo.exe](https://github.com/EdmondTabaku/mojo-gojo/releases/download/v1.0.0/mojo-gojo.exe).  
+Download the .exe file from [mojo-gojo.exe](https://github.com/YoungYeti/mojo-gojo/releases/download/v1.0.0/mojo-gojo.exe).  
 
 Move the .exe file to a directory of your choice.  
 
@@ -48,7 +48,7 @@ Open Command Prompt and verify the installation with ```mojo-gojo```
 All Operating Systems:
 ```bash
 # Clone the repository
-git clone https://github.com/EdmondTabaku/mojo-gojo.git
+git clone https://github.com/YoungYeti/mojo-gojo.git
 cd mojo-gojo
 
 # Build the project
