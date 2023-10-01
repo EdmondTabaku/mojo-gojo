@@ -1,0 +1,30 @@
+package translator
+
+// emojiToKeyword contains mappings of emojis to their Go keyword counterparts.
+var emojiToKeyword = map[string]string{
+	"📦":    "package",
+	"🧙":    "func",
+	"🔄":    "for",
+	"📥":    "import",
+	"✋":    "break",
+	"🎲":    "default",
+	"🎭":    "interface",
+	"🎯":    "select",
+	"🧳":    "case",
+	"😴":    "defer",
+	"🚗":    "go",
+	"🗺️":   "map",
+	"🏗️":   "struct",
+	"📫":    "chan",
+	"🤷":    "else",
+	"🚶‍♂️": "goto",
+	"🔀":    "switch",
+	"🔒":    "const",
+	"🤸":    "fallthrough",
+	"🤔":    "if",
+	"📏":    "range",
+	"🔖":    "type",
+	"⏭️":   "continue",
+	"📤":    "return",
+	"🤲":    "var",
+}
