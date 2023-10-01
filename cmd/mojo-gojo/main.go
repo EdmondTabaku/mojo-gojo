@@ -5,11 +5,12 @@ import (
 	"github.com/EdmondTabaku/mojo-gojo/translator"
 	"os"
 	"os/exec"
+	"strings"
 )
 
 func main() {
 	if len(os.Args) < 2 {
-		fmt.Println("Usage: mojo-gojo <command> [directory/file]")
+		fmt.Println("Usage: mojo-gojo init [module name], mojo-gojo build [directory], mojo-gojo run [directory] [main/package/path]")
 		os.Exit(1)
 	}
 
@@ -41,6 +42,17 @@ func main() {
 		defer deleteGeneratedFiles(generatedFiles)
 
 	case "run":
+		var mainPath string
+		if len(os.Args) > 3 {
+			mainPath = os.Args[3]
+			if strings.HasSuffix(mainPath, ".mg") {
+				mainPath = strings.TrimSuffix(mainPath, ".mg") + ".go"
+			}
+		} else {
+			fmt.Println("Missing argument: mojo-gojo run [directory] [main/package/path]")
+			os.Exit(1)
+		}
+
 		generatedFiles, err := translator.TranslateDirectory(dir)
 		if err != nil {
 			fmt.Printf("Error translating the awesome mojo-gojo files: %s\n", err)
@@ -49,7 +61,7 @@ func main() {
 		defer deleteGeneratedFiles(generatedFiles)
 
 		// Now, run the Go code
-		cmd := exec.Command("go", "run", dir)
+		cmd := exec.Command("go", "run", mainPath)
 		cmd.Stdout = os.Stdout
 		cmd.Stderr = os.Stderr
 		if err := cmd.Run(); err != nil {
