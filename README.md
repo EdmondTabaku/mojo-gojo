@@ -82,7 +82,7 @@ Here's a quick reference of our emoji-to-keyword mappings:
 | 🗺️    | map          |
 | 🏗️    | struct       |
 | 📫     | chan         |
-| 🤷     | else         |
+| 🤷,🤷🏻‍♀️,🤷🏼‍♀️,🤷🏽‍♀️,🤷🏾‍♀️,🤷🏿‍♀️ | else         |
 | 🚶‍♂️  | goto         |
 | 🔀     | switch       |
 | 🔒     | const        |
