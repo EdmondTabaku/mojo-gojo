@@ -32,4 +32,6 @@ var emojiToKeyword = map[string]string{
 	"⏭️":   "continue",
 	"📤":    "return",
 	"🤲":    "var",
+	"😱":     "panic",
+	"😤":     "if err != nil",
 }

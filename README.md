@@ -88,10 +88,12 @@ Here's a quick reference of our emoji-to-keyword mappings:
 | 🔒     | const        |
 | 🤸     | fallthrough  |
 | 🤔     | if           |
+| 😤     |     if err != nil     |
 | 📏     | range        |
 | 🔖     | type         |
 | ⏭️    | continue     |
 | 📤     | return       |
+| 😱     |    panic    |
 | 🤲     | var          |
 
 ### 🖋️ Sample Code
